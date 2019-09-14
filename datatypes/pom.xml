@@ -23,6 +23,11 @@
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-annotations</artifactId>
+      <scope>provided</scope>
+    </dependency>
     <!-- Extends Jackson core, mapper; JAX-RS dependency via parent -->
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>

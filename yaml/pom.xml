@@ -36,6 +36,11 @@ using standard Jackson data binding.
       <groupId>${project.groupId}</groupId>
       <version>${project.version}</version>
     </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-annotations</artifactId>
+      <scope>provided</scope>
+    </dependency>
     <!-- Extends Jackson core, mapper, and also (sort of optionally) on JAXB annotation handler -->
     <dependency>
       <groupId>com.fasterxml.jackson.dataformat</groupId>
