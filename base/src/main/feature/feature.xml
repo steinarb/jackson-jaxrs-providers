@@ -3,5 +3,6 @@
     <repository>mvn:com.fasterxml.jackson.core/jackson-databind/${jackson.version.databind}/xml/features</repository>
     <feature name="${project.artifactId}">
         <feature>jackson-databind</feature>
+        <bundle start-level="80" dependency="true">mvn:javax.ws.rs/javax.ws.rs-api/${rs-api.version}</bundle>
     </feature>
 </features>
