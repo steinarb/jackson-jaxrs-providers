@@ -33,21 +33,34 @@
       <artifactId>jackson-annotations</artifactId>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-core</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <scope>provided</scope>
+    </dependency>
     <!-- builds on shared base JAX-RS handling code... -->
     <dependency>
       <artifactId>jackson-jaxrs-base</artifactId>
       <groupId>${project.groupId}</groupId>
       <version>${project.version}</version>
+      <scope>provided</scope>
     </dependency>
     <!-- Extends Jackson core, mapper, and also (sort of optionally) on JAXB annotation handler -->
     <dependency>
       <groupId>com.fasterxml.jackson.dataformat</groupId>
       <artifactId>jackson-dataformat-xml</artifactId>
+      <scope>provided</scope>
     </dependency>
     <!-- may also need JAXB annotation support -->
     <dependency> 
       <groupId>com.fasterxml.jackson.module</groupId>
       <artifactId>jackson-module-jaxb-annotations</artifactId>
+      <scope>provided</scope>
     </dependency>
     <!--  But Stax2 API must be included -->
     <dependency>
@@ -57,6 +70,7 @@
 
 <!--      <version>[4.0, 5.0)</version>  -->
       <version>4.2</version>
+      <scope>provided</scope>
     </dependency>
 
     <!-- Also: While JDK-included SJSXP almost works, there are some rough edges;
@@ -66,6 +80,7 @@
       <groupId>com.fasterxml.woodstox</groupId>
       <artifactId>woodstox-core</artifactId>
       <version>6.0.1</version>
+      <scope>provided</scope>
       <exclusions>
         <exclusion>
           <groupId>javax.xml.stream</groupId>
@@ -112,6 +127,10 @@
       <plugin>
         <groupId>org.moditect</groupId>
         <artifactId>moditect-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.karaf.tooling</groupId>
+        <artifactId>karaf-maven-plugin</artifactId>
       </plugin>
     </plugins>
   </build>
