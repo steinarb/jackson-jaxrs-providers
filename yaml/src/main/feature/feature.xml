@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.6.0" name="${project.artifactId}">
+    <repository>mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/${jackson.version.jaxrs}/xml/features</repository>
+    <repository>mvn:com.fasterxml.jackson.module/jackson-module-jaxb-annotations/${jackson.version.module}/xml/features</repository>
+    <repository>mvn:com.fasterxml.jackson.dataformat/jackson-dataformat-yaml/${jackson.version.dataformat}/xml/features</repository>
+    <feature name="${project.artifactId}">
+        <feature>jackson-jaxrs-base</feature>
+        <feature>jackson-module-jaxb-annotations</feature>
+        <feature>jackson-dataformat-yaml</feature>
+    </feature>
+</features>
