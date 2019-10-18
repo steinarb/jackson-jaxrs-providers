@@ -24,7 +24,7 @@ import java.net.URL;
 
 public abstract class SimpleEndpointTestBase extends ResourceTestBase
 {
-    final static int TEST_PORT = 6011;
+    final static int TEST_PORT = 60110;
     
     static class Point {
         public int x, y;

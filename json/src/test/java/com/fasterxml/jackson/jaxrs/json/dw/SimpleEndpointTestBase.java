@@ -56,7 +56,7 @@ import com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider;
 
 public abstract class SimpleEndpointTestBase extends ResourceTestBase
 {
-    final protected static int TEST_PORT = 6011;
+    final protected static int TEST_PORT = 60110;
     
     static protected class Point {
         public int x, y;
